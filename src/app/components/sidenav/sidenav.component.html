@@ -1,0 +1,9 @@
+<div fxLayout="column" class="sidenav-content">
+  <div class="name">
+    <p class="first-name">VIRGINIA</p>
+    <p class="last-name">MAITLAND</p>
+  </div>
+  <button mat-button *ngFor="let navLink of sidenavLinks" class="sidenav-link" (click)="navigateTo(navLink.route)">
+    {{navLink.name}}
+  </button>
+</div>

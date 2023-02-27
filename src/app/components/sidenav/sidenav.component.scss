@@ -1,0 +1,28 @@
+.name {
+  text-align: center;
+
+  .first-name {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .last-name {
+    color: blue;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.sidenav-link {
+  font-size: 20px;
+  margin-bottom: 15px;
+
+  &:hover {
+    color: #4b4a4a;
+  }
+}

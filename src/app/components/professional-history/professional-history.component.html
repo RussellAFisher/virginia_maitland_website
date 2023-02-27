@@ -1,0 +1,15 @@
+<div class="professional-history">
+  <div class="history-section" *ngFor="let history of professionalHistory">
+    <h2 class="section-header">{{history.section}}</h2>
+    <div class="section-details" fxLayout="row" *ngFor="let section of history.data">
+      <div fxFlex="15">
+        {{section.date}}
+      </div>
+      <div fxFlex="85">
+        <div *ngFor="let details of section.details">
+          {{details}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

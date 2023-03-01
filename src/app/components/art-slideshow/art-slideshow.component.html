@@ -1,1 +1,11 @@
-<p>Add a slideshow here</p>
+<ngb-carousel 	[showNavigationIndicators]="false">
+  <ng-template ngbSlide *ngFor="let painting of paintings">
+    <div class="painting-image">
+      <img [src]="painting.url" [alt]="painting.name" />
+    </div>
+    <div class="carousel-caption">
+      <h3>{{painting.name}}</h3>
+      <p>{{painting.size}}{{painting.medium}}{{painting.year}}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>

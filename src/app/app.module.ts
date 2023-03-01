@@ -11,6 +11,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { AboutComponent } from './components/about/about.component';
 import { ArtSlideshowComponent } from './components/art-slideshow/art-slideshow.component';
 import { ProfessionalHistoryComponent } from './components/professional-history/professional-history.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProfessionalHistoryComponent } from './components/professional-history/
     BrowserModule,
     NoopAnimationsModule,
     MatSidenavModule,
-    MatButtonModule
+    MatButtonModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

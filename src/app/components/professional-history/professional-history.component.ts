@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
 import soloExhibitions from './solo-exhibitions.json';
 import awardsGrantsHonors from './award-grants-honors.json';
+import teachingExperience from './teaching-experience.json';
+import projectsCollabs from './projects-collabs.json';
 
 @Component({
   selector: 'app-professional-history',
@@ -27,6 +29,14 @@ export class ProfessionalHistoryComponent {
     {
       section: 'Solo Exhibition',
       data: soloExhibitions
+    },
+    {
+      section: 'Teaching Experience',
+      data: teachingExperience
+    },
+    {
+      section: 'Projects and Collaborations',
+      data: projectsCollabs
     }
   ];
 }
